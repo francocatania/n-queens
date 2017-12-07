@@ -30,9 +30,6 @@
     },
 
     _getFirstRowColumnIndexForMajorDiagonalOn: function(rowIndex, colIndex) {
-      // -2 => row
-      // 0 => col
-      
       return colIndex - rowIndex;
     },
 

@@ -5,8 +5,8 @@ describe('solvers', function() {
 
     it('finds a valid solution for n of 1-8', function() {
       _.range(1, 9).map(function(n) {
-        var solutionBoard = new Board(findNRooksSolution(n));
-        var numPieces = _.reduce(solutionBoard.rows(), function(memo, row) {
+        var solutionBoard = new Board(findNRooksSolution(n)); // creating a new board with n pieces
+        var numPieces = _.reduce(solutionBoard.rows(), function(memo, row) { //total number of pieces on the board
           return memo + _.reduce(row, function(memo, col) {
             return memo + col;
           }, 0);
